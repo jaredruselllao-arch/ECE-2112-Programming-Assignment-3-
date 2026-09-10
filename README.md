@@ -4,22 +4,22 @@ This repository contains the contents of my programming assignment 3 for my clas
 A. POSITIONAL AND LABEL-BASED SLICING
 
 
-1. import pandas as pd - A line of code that imports the pandas library, and allows it to be used as pd.attribute
+1. import pandas as pd - A line of code that imports the pandas library, and allows it to be used as the shortcut pd
 
-2. cars = pd.read_csv('cars.csv') - Using the syntax pd.attribute, this line of code utilizes the .read_csv to read the uploaded cars.csv file
+2. cars = pd.read_csv('cars.csv') - Using the syntax pd.function, this line of code utilizes the .read_csv to read the uploaded cars.csv file
 
 3. cars.shape - Using the attribute .shape, we are able to get the shape of the dataframe of the cars.csv file
 
 4. cars.columns - Using the .columns attribute, it gets all of the column names of the cars.csv file
 
-5. cars_6_to_10 = cars.iloc[6:11] - Using the integer location, .iloc, method while using the concept of index slicing, we are able to get rows 6 to 10 of the cars_csv file
-Note: in the index slicing, 6 is the starting point, and 11 is the ending point, excluding 11. 
+5. cars_6_to_10 = cars.iloc[6:11] - Using the integer location, .iloc, indexer while using the concept of index slicing, we are able to get rows 6 to 10 of the cars_csv file
+Note: in the index slicing, 6 is the starting point, and 11 is the ending point, excluding 11.
 
-6. cars_6_to_10 = cars.loc[6:10, ['Model', 'mpg', 'cyl', 'hp', 'gear']] - Simiarly, this code uses the location method, which splits the indexing into rows and columns. 
+6. cars_6_to_10 = cars.loc[6:10, ['Model', 'mpg', 'cyl', 'hp', 'gear']] - Similarly, this code uses the location indexer, which splits the indexing into rows and columns. 
 
-    6a. Rows: the 6:10 portion of the index is a range, this time not index slicing, which ends at the second number while excluding it, hence 10 being included in the range
+    6a. Rows: the 6:10 portion of the index is a range; this time not index slicing, because the .loc method has an inclusive indexing
 
-    6n. Column: The ['Model', 'mpg', 'cyl', 'hp', 'gear'] is the column portion of the code, saying emphasizing that you only want the rows previously listed
+    6n. Column: The ['Model', 'mpg', 'cyl', 'hp', 'gear'] is the column portion of the code, emphasizing that you only want the columns previously listed
 
 B. MODEL LOOKUP
 
@@ -45,7 +45,7 @@ selected_cars = selected_cars [["Model", "mpg", "cyl", "hp", "gear"]]
 cars[cars["Model"] == "Lotus Europa"],
 cars[cars["Model"] == "Ferrari Dino"]] - This portion of the code uses the same logic as before and using bolean conditioning, gets the following rows: Datsun 710, Lotus Europa, and Ferrari Dino
 
-1c. selected_cars = selected_cars [["Model", "mpg", "cyl", "hp", "gear"]] - This portion of the code was what allowed the combined rows to have only rhe instructed columns, and furthermore it also assigned selected_cars to the previous selected_cars as it would read the previous combined row with all the columns dataframe, instead of the current one for the .shape attribute. 
+1c. selected_cars = selected_cars [["Model", "mpg", "cyl", "hp", "gear"]] - This portion of the code was what allowed the combined 3 rows to have only the 5 instructed columns, and furthermore it also reassigned selected_cars to have it hold the new selected_cars dataframe instead of the old one 
 
 selected_cars.shape - this gets the shape of the selected_cars dataframe 
 
