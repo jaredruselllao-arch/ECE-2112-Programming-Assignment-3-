@@ -1,6 +1,9 @@
 # ECE-2112-Programming-Assignment-3-
 This repository contains the contents of my programming assignment 3 for my class, ECE 2112. Alongside, the appropriate explanations for each portion of the code to facilitate ease of understanding. 
 
+LAO, JARED RUSELL CHUA
+2ECE-B
+
 A. POSITIONAL AND LABEL-BASED SLICING
 
 
