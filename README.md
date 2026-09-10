@@ -47,5 +47,5 @@ cars[cars["Model"] == "Ferrari Dino"]] - This portion of the code uses the same 
 
 1c. selected_cars = selected_cars [["Model", "mpg", "cyl", "hp", "gear"]] - This portion of the code was what allowed the combined 3 rows to have only the 5 instructed columns, and furthermore it also reassigned selected_cars to have it hold the new selected_cars dataframe instead of the old one 
 
-selected_cars.shape - this gets the shape of the selected_cars dataframe 
+2. selected_cars.shape - this gets the shape of the selected_cars dataframe 
 
